@@ -1,3 +1,10 @@
-*.deploy binary
-*.manifest binary
+# Forzar a que todos los archivos de la app se traten como binarios
 *.application binary
+*.manifest binary
+*.deploy binary
+*.exe binary
+*.dll binary
+*.ico binary
+
+# Evitar que Git cambie los finales de línea (CRLF vs LF)
+* -text
