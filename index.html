@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalador de TransactApp</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9; margin: 0; }
-        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #333; }
-        .btn { display: inline-block; background-color: #0078d4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-weight: bold; }
+        body { font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f2f5; margin: 0; }
+        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
+        h1 { color: #1a1a1a; margin-bottom: 0.5rem; }
+        p { color: #666; line-height: 1.5; }
+        .version { font-weight: bold; color: #0078d4; background: #e7f3ff; padding: 4px 10px; border-radius: 20px; font-size: 0.9rem; }
+        .btn-group { margin-top: 2rem; display: flex; flex-direction: column; gap: 10px; }
+        .btn { display: block; background-color: #0078d4; color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; }
         .btn:hover { background-color: #005a9e; }
-        p { color: #666; }
+        .btn-secondary { background-color: #f3f3f3; color: #333; }
+        .btn-secondary:hover { background-color: #e5e5e5; }
+        .note { margin-top: 1.5rem; font-size: 0.8rem; color: #888; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>TransactApp</h1>
-        <p>Aplicación de gestión de finanzas personales.</p>
-        <p>Versión actual: <strong>1.0.0.5</strong></p>
-        <a href="setup.exe" class="btn">Descargar Instalador</a>
-        <br><br>
-        <p><small>Nota: Se requiere Windows para ejecutar esta aplicación.</small></p>
+        <p>Gestión de finanzas personales y control de inventario de efectivo.</p>
+        <span class="version">Versión 1.0.0.5</span>
+        
+        <div class="btn-group">
+            <a href="TransactApp.application" class="btn">🚀 Instalar ahora</a>
+            
+            <a href="setup.exe" class="btn btn-secondary">Descargar Setup.exe</a>
+        </div>
+        
+        <p class="note">Nota: Si la instalación falla, intenta abrir esta página desde <strong>Microsoft Edge</strong>.</p>
     </div>
 </body>
 </html>
