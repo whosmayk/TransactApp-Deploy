@@ -3,19 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalador de TransactApp</title>
+    <title>Instalador de TransactApp - Dark Mode</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f2f5; margin: 0; }
-        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
-        h1 { color: #1a1a1a; margin-bottom: 0.5rem; }
-        p { color: #666; line-height: 1.5; }
-        .version { font-weight: bold; color: #0078d4; background: #e7f3ff; padding: 4px 10px; border-radius: 20px; font-size: 0.9rem; }
-        .btn-group { margin-top: 2rem; display: flex; flex-direction: column; gap: 10px; }
-        .btn { display: block; background-color: #0078d4; color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; }
-        .btn:hover { background-color: #005a9e; }
-        .btn-secondary { background-color: #f3f3f3; color: #333; }
-        .btn-secondary:hover { background-color: #e5e5e5; }
-        .note { margin-top: 1.5rem; font-size: 0.8rem; color: #888; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            background-color: #121212; /* Fondo muy oscuro */
+            color: #e0e0e0; /* Texto claro */
+            margin: 0; 
+        }
+        .card { 
+            background: #1e1e1e; /* Superficie de la tarjeta ligeramente más clara */
+            padding: 2.5rem; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            text-align: center; 
+            max-width: 420px; 
+            border: 1px solid #333; /* Borde sutil para definir la tarjeta */
+        }
+        h1 { 
+            color: #ffffff; 
+            margin-bottom: 0.5rem; 
+            font-weight: 700;
+        }
+        p { 
+            color: #b0b0b0; 
+            line-height: 1.6; 
+            font-size: 0.95rem;
+        }
+        .version { 
+            display: inline-block;
+            font-weight: bold; 
+            color: #4dabf7; /* Azul claro para destacar en el fondo oscuro */
+            background: rgba(77, 171, 247, 0.1); 
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(77, 171, 247, 0.3);
+        }
+        .btn-group { 
+            margin-top: 2rem; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px; 
+        }
+        .btn { 
+            display: block; 
+            background-color: #0078d4; 
+            color: white; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+        }
+        .btn:hover { 
+            background-color: #0086f0; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 120, 212, 0.4);
+        }
+        .btn-secondary { 
+            background-color: #333; 
+            color: #e0e0e0; 
+            border: 1px solid #444;
+        }
+        .btn-secondary:hover { 
+            background-color: #444; 
+            border-color: #555;
+        }
+        .instruction-text {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #888;
+            background: #252525;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #0078d4;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +98,11 @@
 
             <a href="setup.exe" class="btn btn-secondary">Descargar Setup.exe</a>
 
-            <p>Si usas Chrome o Firefox u otro navegador, descarga el Setup.exe. Si usas Microsoft Edge, puedes usar el botón Instalar ahora directamente.</p>
+            <div class="instruction-text">
+                💡 <strong>Tip de instalación:</strong><br>
+                Si usas Chrome o Firefox, descarga el <b>Setup.exe</b>.<br>
+                Si usas Microsoft Edge, puedes usar <b>Instalar ahora</b> directamente.
+            </div>
         </div>
     </div>
 </body>
