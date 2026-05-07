@@ -27,7 +27,7 @@ Gestión de finanzas personales y control de inventario de efectivo.
 
 ## Uso
 
-1. После instalación, busca **TransactApp** en el menú Inicio
+1. Después de la instalación, busca **TransactApp** en el menú Inicio
 2. La aplicación guardará todos tus datos en una base de datos SQLite local
 3. Los datos se almacenan en: `%APPDATA%\TransactApp\` (Windows)
 
