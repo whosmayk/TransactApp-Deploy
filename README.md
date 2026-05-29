@@ -33,7 +33,7 @@ Gestión de finanzas personales y control de inventario de efectivo.
 
 ## Version
 
-1.0.3.3
+1.0.3.4
 
 ## Estructura de archivos
 
@@ -93,7 +93,7 @@ Personal finance management and cash inventory control.
 
 ## Version
 
-1.0.3.3
+1.0.3.4
 
 ## File Structure
 
